@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace ООП_1
 {
@@ -18,6 +15,9 @@ namespace ООП_1
                 Themes = "Тема|Хранение файлов разного типа",
                 C_Documents = "Путь к Файлу|C_Documents"
             };
+
+
+
 
             //Console.BackgroundColor = ConsoleColor.White;
             Console.ForegroundColor = ConsoleColor.Red;
