@@ -9,11 +9,12 @@ namespace ООП_1
         {
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine("MS_Word");
+            Console.WriteLine();
             Console.ResetColor();
             base.Print();
-            Console.ForegroundColor = ConsoleColor.Blue;
-            Console.Write("Страница: ");
             Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write("Страница: ");
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.Write(this.Page + "\n");
         }
 
