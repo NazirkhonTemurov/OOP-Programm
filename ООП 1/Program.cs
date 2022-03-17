@@ -7,39 +7,64 @@ namespace ООП_1
     {
         static void Main(string[] args)
         {
-            Род_файл file = new Род_файл
+            MS_Word  file = new MS_Word
             {
-                Name = "Имя|Родительный файл",
-                Author = "Автор|Темуров Назирхон",
-                KeyWords = "Ключевое слово|MS Word, PDF, MS Excel, TXT, HTML",
-                Themes = "Тема|Хранение файлов разного типа",
-                C_Documents = "Путь к Файлу|C_Documents"
+                Name = "Родительный файл",
+                Author = "Темуров Назирхон",
+                KeyWords = "MS Word, PDF, MS Excel, TXT, HTML",
+                Themes = "Хранение файлов разного типа",
+                C_Documents = "C_Documents",
+                Page = 20
             };
+            file.Print();
 
-
-
-
-            //Console.BackgroundColor = ConsoleColor.White;
-            Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine("Родительный файл");
-            Console.WriteLine();
-            Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine(file.Name);
-            Console.WriteLine(file.Author);
-            Console.WriteLine(file.KeyWords);
-            Console.WriteLine(file.Themes);
-            Console.WriteLine(file.C_Documents);
-            Console.ResetColor();
-            //MS Word
-            MS_Word MS_Word = new MS_Word
+            PDF pdf = new PDF
             {
-                NameDoc = "MS Word"
+                Name = "Родительный файл",
+                Author = "Темуров Назирхон",
+                KeyWords = "MS Word, PDF, MS Excel, TXT, HTML",
+                Themes = "Хранение файлов разного типа",
+                C_Documents = "C_Documents",
+                DPI = 300
             };
+            pdf.Print();
 
-            Console.WriteLine();
-            Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine(MS_Word.NameDoc);
-            Console.ResetColor();
+            TXT txt = new TXT
+            {
+                Name = "Родительный файл",
+                Author = "Темуров Назирхон",
+                KeyWords = "MS Word, PDF, MS Excel, TXT, HTML",
+                Themes = "Хранение файлов разного типа",
+                C_Documents = "C_Documents",
+                SIZE = "123Kb"
+                
+            };
+            txt.Print();
+
+            HTML html = new HTML
+            {
+                Name = "Родительный файл",
+                Author = "Темуров Назирхон",
+                KeyWords = "MS Word, PDF, MS Excel, TXT, HTML",
+                Themes = "Хранение файлов разного типа",
+                C_Documents = "C_Documents",
+                Size = "1262Kb"
+            };
+            html.Print();
+
+            MS_Excel excel = new MS_Excel
+            {
+                Name = "Родительный файл",
+                Author = "Темуров Назирхон",
+                KeyWords = "MS Word, PDF, MS Excel, TXT, HTML",
+                Themes = "Хранение файлов разного типа",
+                C_Documents = "C_Documents",
+                Password = "Nazirkhon2003"
+            };
+            excel.Print();
+
+
+
 
             Console.ReadKey();
         }

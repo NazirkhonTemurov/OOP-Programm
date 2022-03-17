@@ -1,21 +1,24 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace ООП_1
 {
-    class MS_Word : Род_файл
+    class TXT : Род_файл
     {
-        public int Page;
+        public string SIZE;
         public override void Print()
         {
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine("MS_Word");
+            Console.WriteLine("TXT");
             Console.ResetColor();
             base.Print();
             Console.ForegroundColor = ConsoleColor.Blue;
-            Console.Write("Страница: ");
+            Console.Write("Размер: ");
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.Write(this.Page + "\n");
+            Console.Write(this.SIZE + "\n");
         }
-
     }
 }
